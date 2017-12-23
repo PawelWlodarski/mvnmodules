@@ -23,7 +23,7 @@ public class HistoryEngine implements Engine {
 
         history.add(add);
 
-        Optional<Integer> r = MathLib.add(add.getI1(), add.getI1());
+        Optional<Integer> r = MathLib.add(add.getI1(), add.getI2());
 
         return new Result(r);
     }
