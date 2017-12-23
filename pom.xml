@@ -17,6 +17,7 @@
 
     <modules>
         <module>math</module>
+        <module>calculator</module>
     </modules>
 
 
