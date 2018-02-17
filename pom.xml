@@ -19,6 +19,9 @@
         <module>math</module>
         <module>calculator</module>
         <module>gui</module>
+        <module>displayerAPI</module>
+        <module>displayerProvider1</module>
+        <module>displayerConsumer</module>
     </modules>
 
 
@@ -43,6 +46,41 @@
                     <outputDirectory>../mods</outputDirectory>
                 </configuration>
             </plugin>
+            <!-- mvn exec:exec-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>${JAVA_HOME}/bin/java</executable>
+                    <arguments>
+                        <argument>--module-path</argument>
+                        <modulepath/>
+                        <argument>--module</argument>
+                        <argument>packt.main/com.packt.App</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jdeps-plugin</artifactId>-->
+                <!--<version>3.1.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>jdkinternals</goal> &lt;!&ndash; verify main classes &ndash;&gt;-->
+                            <!--<goal>test-jdkinternals</goal> &lt;!&ndash; verify test classes &ndash;&gt;-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>

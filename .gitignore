@@ -26,3 +26,14 @@ hs_err_pid*
 .idea/
 /math/math.iml
 math/target/
+/gui/gui.iml
+calculator/target/
+calculator/calculator.iml
+gui/gui.iml
+gui/target/
+mods/
+/displayerAPI/displayerAPI.iml
+/displayerConsumer/displayerConsumer.iml
+displayerAPI/target/
+displayerProvider1/displayerProvider1.iml
+displayerProvider1/target/

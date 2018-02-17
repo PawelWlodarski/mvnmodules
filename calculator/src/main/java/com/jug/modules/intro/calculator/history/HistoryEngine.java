@@ -21,6 +21,7 @@ public class HistoryEngine implements Engine {
         if(!AddValidator.isValid(add))
             return Result.empty();
 
+        logger.info("adding to history :" + add);
         history.add(add);
 
         Optional<Integer> r = MathLib.add(add.getI1(), add.getI2());

@@ -6,7 +6,7 @@
     <dependencies>
         <dependency>
             <groupId>lodz.jug</groupId>
-            <artifactId>calculator</artifactId>
+            <artifactId>displayerAPI</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
@@ -17,21 +17,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>gui</artifactId>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.jug.modules.intro.gui.GUI</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <artifactId>displayerConsumer</artifactId>
+
     
 </project>

@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.function.Consumer;
 
 
-public class Displayer {
+public class GUI {
 
     private static Consumer<Integer> printResult=(i) -> System.out.println("result is : "+i);
     private static Runnable errorProcedure = () -> System.out.println("unable to add integeres, overflow");
