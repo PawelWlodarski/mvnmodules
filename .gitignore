@@ -37,3 +37,6 @@ mods/
 displayerAPI/target/
 displayerProvider1/displayerProvider1.iml
 displayerProvider1/target/
+/myUnnamed/myUnnamed.iml
+displayerConsumer/target/
+myUnnamed/myUnnamed.iml

@@ -20,10 +20,17 @@ public class DisplayerConsumerMain {
                 .findFirst();
 
 
-        Displayer displayer = firstPotentialDisplayer.orElseThrow(() -> new RuntimeException("No Displayer her"));
+        Displayer displayer = firstPotentialDisplayer.orElseThrow(() -> new RuntimeException("No Displayer found"));
 
 
         displayer.display("Displayer Found Successfully : "+displayer.getClass());
+
+        Module consumerModule = DisplayerConsumerMain.class.getModule();
+
+        displayer.display("Module: "+consumerModule);
+        displayer.display("Name: " + consumerModule.getName());
+        displayer.display("isNamed: " + consumerModule.isNamed());
+        displayer.display("Descriptor: " + consumerModule.getDescriptor());
 
     }
 }
